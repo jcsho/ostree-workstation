@@ -1,0 +1,31 @@
+include: upstream/fedora-common-ostree.yaml
+
+ref: fedora/33/${basearch}/sway
+rojig:
+  name: fedora-sway
+  summary: "Fedora Silverblue Sway"
+  license: MIT
+
+repos:
+  - fedora-33
+  - fedora-33-updates
+
+packages:
+  # sway / wayland
+  - sway
+  - swayidle
+  - swaylock
+  - mako
+  - waybar
+  - slurp
+  - grim
+  - xorg-x11-server-Xwayland
+  - wofi
+  - wl-clipboard
+
+  # shell
+  - alacritty
+  - exa
+  - neovim
+  - tmux
+  - zsh
