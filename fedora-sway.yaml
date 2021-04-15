@@ -25,7 +25,13 @@ packages:
 
   # shell
   - alacritty
+  - bat
   - exa
+  - fd-find
+  - git-delta
   - neovim
+  - prename # add regex capable rename tool
   - tmux
   - zsh
+
+postprocess-script: post.sh
